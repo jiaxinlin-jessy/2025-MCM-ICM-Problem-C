@@ -10,54 +10,55 @@
 
 This repository contains our solution to the 2025 Mathematical Contest in Modeling (MCM/ICM) Problem C.
 
-We developed a machine-learning framework for Olympic medal prediction by combining:
+We propose a machine-learning framework for Olympic medal forecasting by integrating:
 
-- Word2Vec semantic feature quantification
+- Word2Vec semantic embedding
 - Random Forest ensemble regression
 - Host-country effect analysis
 - Great coach effect modeling
 - Medal breakthrough probability estimation
 
-The model was used to forecast medal distributions for the 2028 Los Angeles Olympic Games.
-
----
-
-## Highlights
-
-- Predicted medal outcomes for 93 countries in the 2028 Olympics
-- Built a 100-tree Random Forest regression framework
-- Quantified Olympic entities using Word2Vec embeddings
-- Analyzed host-country and coaching effects
-- Proposed strategic recommendations for National Olympic Committees (NOCs)
+The framework was developed to predict medal distributions for the 2028 Los Angeles Olympic Games.
 
 ---
 
 ## Framework
 
 <p align="center">
-  <img src="assets/framework.png" width="850"/>
+  <img src="assets/framework.png" width="950"/>
 </p>
 
 ---
 
 ## Key Results
 
-### Predicted Top Nations (2028)
+### Predicted 2028 Medal Table
 
-| Country | Total Medals |
-|---|---|
-| United States | 120 |
-| China | 81 |
-| Great Britain | 66 |
-| Japan | 48 |
-| France | 44 |
+<p align="center">
+  <img src="assets/medal_table.png" width="700"/>
+</p>
 
-### Potential 0→1 Medal Breakthrough Countries
+### Host Effect Analysis
 
-- Honduras
-- Samoa
-- Guinea
-- Mali
+<p align="center">
+  <img src="assets/host_effect.png" width="500"/>
+</p>
+
+The model predicts:
+- 93 medal-winning countries in the 2028 Olympics
+- United States leading with 120 total medals
+- Several potential 0→1 breakthrough nations, including Honduras and Samoa
+
+---
+
+## Methods
+
+- Data Cleaning & EDA
+- Feature Engineering
+- Word2Vec (CBOW & Skip-gram)
+- Random Forest Regression
+- Host Effect Analysis
+- Great Coach Effect Modeling
 
 ---
 
@@ -65,7 +66,7 @@ The model was used to forecast medal distributions for the 2028 Los Angeles Olym
 
 ```text
 paper/      Final paper
-assets/     Figures and visual materials
+assets/     Figures used in README
 ```
 
 ---
@@ -73,17 +74,6 @@ assets/     Figures and visual materials
 ## Paper
 
 📄 [Beyond_the_Numbers.pdf](paper/Beyond_the_Numbers.pdf)
-
----
-
-## Methods
-
-- Feature Engineering
-- Exploratory Data Analysis (EDA)
-- Word2Vec (CBOW & Skip-gram)
-- Random Forest Regression
-- Host Effect Analysis
-- Great Coach Effect Modeling
 
 ---
 
